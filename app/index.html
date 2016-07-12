@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Converter 0.0.1 </title>
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link href="css/index.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+
+<div class="tabs">
+    <input id="tab1" type="radio" name="tabs" checked>
+    <label for="tab1" title="Вкладка 1"><i class="fa fa-bookmark-o"></i>Md5</label>
+
+    <input id="tab2" type="radio" name="tabs">
+    <label for="tab2" title="Вкладка 2"><i class="fa fa-bolt"></i> sha1</label>
+
+    <input id="tab3" type="radio" name="tabs">
+    <label for="tab3" title="Вкладка 2"><i class="fa fa-bolt"></i> des3</label>
+
+    <input id="tab4" type="radio" name="tabs">
+    <label for="tab4" title="Вкладка 2"><i class="fa fa-bolt"></i> aes192</label>
+
+    <section id="content1">
+        <p>
+            Convert text to md5
+            <button type="button" class="btn btn-success" id="md5convert">Convert</button>
+        </p>
+
+
+        <textarea name="md5text" id="md5text" cols="30" rows="8" class="form-control"></textarea>
+        <textarea name="md5" id="md5" cols="30" rows="8" class="form-control"></textarea>
+
+
+    </section>
+    <section id="content2">
+        <p>
+            Convert text to sha
+            <button type="button" class="btn btn-success" id="sha1convert">Convert</button>
+        </p>
+        <textarea name="shatext" id="shatext" cols="30" rows="8" class="form-control"></textarea>
+        <textarea name="sha" id="sha" cols="30" rows="8" class="form-control"></textarea>
+    </section>
+
+    <section id="content3">
+        <p>
+            Convert text to des3
+            <button type="button" class="btn btn-success" id="des3convert">Convert</button>
+        </p>
+        <input type="password" id="des3pass" class="form-control">
+        <textarea name="shatext" id="des3text" cols="30" rows="8" class="form-control"></textarea>
+        <textarea name="sha" id="des3" cols="30" rows="8" class="form-control"></textarea>
+    </section>
+
+    <section id="content4">
+        <p>
+            Convert text to aes192
+            <button type="button" class="btn btn-success" id="aesconvert">Convert</button>
+        </p>
+        <input type="password" id="aespass" class="form-control">
+        <textarea name="shatext" id="aestext" cols="30" rows="8" class="form-control"></textarea>
+        <textarea name="sha" id="aes" cols="30" rows="8" class="form-control"></textarea>
+    </section>
+</div>
+
+
+<script src="js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+{
+  "name": "converter",
+  "description": "Convert text to md5/sha1 and other",
+  "main": "main.js",
+  "authors": [
+    "Suraev Denis"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "md5",
+    "sha",
+    "electron"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6"
+  }
+}
